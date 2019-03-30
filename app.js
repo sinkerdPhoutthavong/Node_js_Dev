@@ -1,4 +1,12 @@
-var fs = require('fs')
-var readMe = fs.readFileSync('./code.txt','UTF-8'); ສໍາລັບການອ່ານຟາຍ
-console.log(readMe);
-fs.writeFileSync('./write.txt',readMe); //ສຳລັບຂຽນຟາຍ
+var fs = require('fs');
+var Readme = fs.readFileSync('./code.txt','UTF-8');
+fs.mkdir('Project',function(){
+    fs.writeFileSync('./Project/Readme.txt',Readme);
+    var a = "Success";
+    console.log(a);
+});
+
+
+
+
+
